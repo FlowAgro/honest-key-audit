@@ -33,7 +33,8 @@ import ecc_audit  # noqa (registro/curvas; usado indiretamente)
 
 from cryptography import x509
 from cryptography.hazmat.primitives.serialization import (
-    load_pem_public_key, load_der_public_key, load_ssh_public_key)
+    load_pem_public_key, load_der_public_key, load_ssh_public_key,
+    load_pem_private_key, load_der_private_key, load_ssh_private_key)
 from cryptography.hazmat.primitives.asymmetric import rsa, ec
 
 _CURVE_MAP = {"secp256r1": "P-256", "prime256v1": "P-256", "secp256k1": "secp256k1"}
@@ -69,6 +70,7 @@ def det_wiener(e, N):
 
 # ---------------- carregar chaves reais ----------------
 def _load_pubkey_from_bytes(data):
+    # Certificados e chaves PUBLICAS (o caso normal de auditoria).
     for loader in (
         lambda d: x509.load_pem_x509_certificate(d).public_key(),
         lambda d: x509.load_der_x509_certificate(d).public_key(),
@@ -78,6 +80,18 @@ def _load_pubkey_from_bytes(data):
     ):
         try:
             return loader(data)
+        except Exception:
+            continue
+    # Chave PRIVADA: auditamos so' a parte publica (N,e / curva+ponto), que e' o
+    # que os detectores usam. Aceitar isto evita o silencioso "0 chaves lidas"
+    # quando o usuario aponta para a propria chave privada. So' sem senha.
+    for loader in (
+        lambda d: load_pem_private_key(d, password=None),
+        lambda d: load_der_private_key(d, password=None),
+        lambda d: load_ssh_private_key(d, password=None),
+    ):
+        try:
+            return loader(data).public_key()
         except Exception:
             continue
     return None
