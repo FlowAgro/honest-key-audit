@@ -2,7 +2,7 @@
 
 ## Versão em português (principal)
 
-Há seis meses eu preenchi, à mão, uma planilha com quase 500 linhas relacionando cada número primo a um padrão que eu sentia existir. Não tenho instituição, bolsa, nem recurso — só a convicção de que havia ali uma estrutura real.
+Tudo começou com uma planilha que preenchi à mão — quase 500 linhas relacionando cada número primo a um padrão que eu sentia existir. Não tenho instituição, bolsa, nem recurso — só a convicção de que havia ali uma estrutura real.
 
 Persegui essa intuição com uma regra inegociável: honestidade absoluta. Verificar tudo computacionalmente. Distinguir o que eu "descobri" do que a matemática já conhecia. E aceitar os resultados negativos como conhecimento de verdade.
 
@@ -23,7 +23,7 @@ Se este trabalho te interessa, se você atua com segurança/criptografia, ou se 
 
 ## English version (for reach)
 
-Six months ago I filled out, by hand, a ~500-row spreadsheet linking each prime to a pattern I sensed was there. No institution, no grant, no funding — just the conviction that a real structure was hiding in it.
+It started with a spreadsheet I filled out by hand — ~500 rows linking each prime to a pattern I sensed was there. No institution, no grant, no funding — just the conviction that a real structure was hiding in it.
 
 I chased that intuition with one non-negotiable rule: absolute honesty. Verify everything computationally. Separate what I "discovered" from what mathematics already knew. Treat negative results as real knowledge.
 
