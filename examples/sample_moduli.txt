@@ -1,0 +1,8 @@
+# Corpus de exemplo para: python src/rsa_audit.py audit examples/sample_moduli.txt
+# Um modulo RSA (N) por linha. Decimal ou 0x-hex. # = comentario.
+# Demo ao vivo com chaves sinteticas (AUC=1.00): python src/rsa_audit.py selftest
+#
+# [FRACO] primos proximos -> detector Fermat deve marcar VULNERAVEL:
+92715778051320971100700481698443630825295937585625590540311807949106956104117
+# [FORTE] primos independentes -> deve passar como ok:
+34728595142038074182000894556250202914600573900418047487810840537342578160129

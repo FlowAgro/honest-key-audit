@@ -1,0 +1,25 @@
+# resultados gerados
+results/
+*.txt.out
+
+# NUNCA versionar segredos
+*.bat
+.env
+.env.*
+*.key
+*.pem
+secrets*
+
+# python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# SO
+.DS_Store
+Thumbs.db
+
+# dados coletados (nao versionar)
+_harvest/

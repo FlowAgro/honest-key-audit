@@ -1,0 +1,3 @@
+sympy>=1.12
+cryptography>=42.0
+# opcional (acelera src/batchgcd.py em escala 10-100x): pip install gmpy2

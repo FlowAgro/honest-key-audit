@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this software or its underlying research, please cite it."
+title: "HonestKeyAudit — a defensive RSA & ECC weak-key auditor"
+authors:
+  - family-names: "Rodrigues da Cunha"
+    given-names: "Cristian Vitorino"
+type: software
+license: MIT
+repository-code: "https://github.com/<seu-usuario>/honest-key-audit"
+references:
+  - type: article
+    title: "A Silver-Phase Barrier for Integer Factorization: Recovering the Factor's Phase is Equivalent to Factoring"
+    authors:
+      - family-names: "Rodrigues da Cunha"
+        given-names: "Cristian Vitorino"
+    doi: "10.5281/zenodo.14553556"
+    year: 2026
