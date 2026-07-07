@@ -25,8 +25,10 @@ from cryptography.hazmat.primitives.asymmetric import rsa
 BITS = 1024  # tamanho nominal da chave (N tem ~BITS bits)
 
 def leading(N):
-    """f = N / 2^(BITS-2)  em [1,4).  OpenSSL: [2.25,4).  Ingenuo: [1,4)."""
-    return N / float(2**(BITS-2))
+    """f = N / 2^(BITS-2)  em [1,4).  OpenSSL: [2.25,4).  Ingenuo: [1,4).
+    Shift antes do float para nao estourar em chaves >=2048 bits."""
+    shift = BITS - 54
+    return (N >> shift)/float(2**52) if shift > 0 else N/float(2**(BITS-2))
 
 def silver_phase(N):
     mp.mp.dps = 60

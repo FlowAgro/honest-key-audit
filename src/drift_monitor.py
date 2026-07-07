@@ -24,7 +24,9 @@ from sympy import isprime
 from gen_anomaly import silver_phase, SMALL_PRIMES
 
 def leading(N):
-    return N / float(2**(N.bit_length()-2))
+    # f = N/2^(bits-2) em [1,4); shift antes do float para nao estourar em chaves >=2048 bits
+    b = N.bit_length(); shift = b - 54
+    return (N >> shift)/float(2**52) if shift > 0 else N/float(2**(b-2))
 
 def _ks_p_stat(D, en):
     x = (en + 0.12 + 0.11/en) * D
