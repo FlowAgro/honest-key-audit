@@ -6,7 +6,7 @@ authors:
     given-names: "Cristian Vitorino"
 type: software
 license: MIT
-repository-code: "https://github.com/<seu-usuario>/honest-key-audit"
+repository-code: "https://github.com/FlowAgro/honest-key-audit"
 references:
   - type: article
     title: "A Silver-Phase Barrier for Integer Factorization: Recovering the Factor's Phase is Equivalent to Factoring"

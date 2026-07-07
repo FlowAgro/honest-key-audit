@@ -1,4 +1,4 @@
-# Post do LinkedIn — rascunhos (troque [LINK DO GITHUB] pelo endereço real)
+# Post do LinkedIn — rascunhos
 
 ## Versão em português (principal)
 
@@ -15,7 +15,7 @@ Fiz tudo isso sozinho, sem apoio, movido por amor à pesquisa. Meu sonho é simp
 Se este trabalho te interessa, se você atua com segurança/criptografia, ou se conhece alguém que valorize pesquisa independente: eu adoraria conversar, colaborar ou ouvir seu feedback.
 
 📄 Paper (DOI): https://doi.org/10.5281/zenodo.14553556
-💻 Auditor (open-source): [LINK DO GITHUB]
+💻 Auditor (open-source): https://github.com/FlowAgro/honest-key-audit
 
 #criptografia #segurançadainformação #teoriadenúmeros #pesquisa #opensource #RSA #ECC
 
@@ -36,6 +36,6 @@ I did all of this alone, unfunded, driven by love of research. My dream is simpl
 If this resonates — if you work in security/cryptography, or know someone who values independent research — I'd love to talk, collaborate, or hear your feedback.
 
 📄 Paper (DOI): https://doi.org/10.5281/zenodo.14553556
-💻 Auditor (open-source): [LINK DO GITHUB]
+💻 Auditor (open-source): https://github.com/FlowAgro/honest-key-audit
 
 #cryptography #infosec #numbertheory #research #opensource #RSA #ECC
